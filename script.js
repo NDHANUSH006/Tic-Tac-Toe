@@ -1,5 +1,5 @@
 const board = document.querySelector(".board");
-let turn = "〇";
+let turn = "✖";
 let total_turn = 0;
 
 let winner = [
