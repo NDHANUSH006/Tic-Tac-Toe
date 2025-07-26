@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container > h1{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 550px;
+  width: 400px;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.cell{
+    border: 2px solid rgb(181, 164, 164);
+    border-radius: 10px;
+    background-color: white;
+}
+
+button{
+    margin-top: 30px;
+    margin-left: 110px;
+    background-color: rgb(30, 162, 46);
+    border: none;
+    padding: 15px 40px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.cell:hover{
+    background-color: rgb(210, 202, 202);
+}
+
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+p{
+  margin-top: 20px;
+  margin-left: 120px;
+  font-weight: 600;
+  font-size: 2rem;
+  color: black;
+}
