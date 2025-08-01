@@ -30,7 +30,7 @@ function checkWinner() {
 const printer = (event) => {
   const element = event.target;
 
-  if (element.innerHTML !== "") return; // ✅ prevent overwriting
+  if (element.innerHTML !== "") return; 
 
   if (turn === "〇") {
     element.innerHTML = "〇";
@@ -52,13 +52,13 @@ const printer = (event) => {
     turn = "〇";
   }
 
-  total_turn++; // ✅ count both player turns
+  total_turn++; 
 
   if (total_turn === 9) {
     document.getElementById("winningMessage").innerHTML = "Match is Drawn";
     document.getElementById("winningMessage").style.marginLeft ='100px';
     
-    board.removeEventListener("click", printer); // ✅ stop game after draw
+    board.removeEventListener("click", printer); 
   }
 };
 
